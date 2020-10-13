@@ -1,21 +1,17 @@
 ---
-vars:
-	admin_password: $6$vowD4kkxqLmnkUJ$8jytshLQ0VthGHBpCMTfX4hGrpdNggoAlYj/ElSjSw5ik21UTh/vXVCoMqYy63bzwezQG27ssz8s4Q4OzE6YT.
-	junior_password: $6$23fOYvwd7T6Nr$Vr9GJSadvX2xvmROPxqan4vuDcG1bpW54FsI8oHHtHzfTY.vdlzz/d8tYT2MObBUmBOiBSmXLeig.1lv1BG1J.
+- name: Add junior user Igor
+  user:
+    name: Igor
+    password: "{{ junior_password }}"
+    update_password: on_create
+    group: "{{ junior_devops_group }}"
+    shell: /bin/bash
 
-tasks:
-	- name: Add junior user Igor
-     	  user:
-          	name: Igor
-       		password: {{ junior_password }}
-        	update_password: on_create
-		group: {{ junior_devops_group }}
-		shell /bin/bash
-
-	- name: Add admin user BetterIgor
-          	name: BetterIgor
-       		password: {{ admin_password }}
-        	update_password: on_create
-		group: {{ admin_devops_group }}
-		shell: /bin/bash
-		system: yes
+- name: Add admin user BetterIgor
+  user:
+    name: BetterIgor
+    password: "{{ admin_password }}"
+    update_password: on_create
+    group: "{{ admin_devops_group }}"
+    shell: /bin/bash
+    system: yes

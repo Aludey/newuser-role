@@ -1,3 +1,6 @@
 ---
 admin_devops_group: sudo
 junior_devops_group: plebs
+
+admin_password: $6$vowD4kkxqLmnkUJ$8jytshLQ0VthGHBpCMTfX4hGrpdNggoAlYj/ElSjSw5ik21UTh/vXVCoMqYy63bzwezQG27ssz8s4Q4OzE6YT.
+junior_password: $6$23fOYvwd7T6Nr$Vr9GJSadvX2xvmROPxqan4vuDcG1bpW54FsI8oHHtHzfTY.vdlzz/d8tYT2MObBUmBOiBSmXLeig.1lv1BG1J.
