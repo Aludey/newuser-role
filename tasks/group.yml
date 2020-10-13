@@ -1,11 +1,11 @@
 ---
 - name: Add a devops admin group 
-      group:
-        name: {{ admin_devops_group }}
+  group:
+  	name: {{ admin_devops_group }}
         state: present
 	system: yes
 
 - name: Add a devops junior group 
-      group:
-        name: {{ junior_devops_group }}
+  group:
+  	name: {{ junior_devops_group }}
         state: present
