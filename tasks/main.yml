@@ -1,0 +1,6 @@
+---
+- name: Adding user groups
+  import_tasks: group.yml
+
+- name: Adding users
+  import_tasks: user.yml
